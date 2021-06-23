@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image2PixelForm</title>
+</head>
+<body>
+    <form action="{% url 'upload_create' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <br>
+        <input type="file" name="image"><br>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
